@@ -3,12 +3,13 @@
 }
 
 
+
 body {
-    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.4;
     margin: 0;
 }
+
 
 
 img {
@@ -16,22 +17,22 @@ img {
 }
 
 
+
 header {
     background-color: #000;
     color: #fff;
 }
-
 
 .wrapper {
     max-width: 940px;
     margin: 0 auto;
 }
 
-
 header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 3em;
 }
 
 
@@ -40,7 +41,6 @@ nav ul {
     list-style: none;
 }
 
-
 nav ul li a:link,
 nav ul li a:visited {
     display: inline-block;
@@ -48,6 +48,174 @@ nav ul li a:visited {
     background-color: #000;
     color: #fff;
     text-decoration: none;
+    font-size: .65rem;
 }
 
 
+
+#hero {
+    height: 600px;
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    max-width: 60%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 50%);
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+
+
+
+.about-me {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .two-column {
+    grid-column: 1 / 2;
+}
+
+.two-column p {
+    font-size: .65rem;
+}
+
+#about-me {
+    padding: 0 3em;
+}
+
+
+
+.wrapper-two {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#services {
+    background-color: #fafafa;
+    padding: 1em 3em 3em;
+}
+
+.wrapper-two h2 {
+    max-width: 940px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grid article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.grid article h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.grid article p {
+    font-size: .65rem;
+}
+
+.grid a:link,
+.grid a:visited {
+    margin-top: auto;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 4px;
+    color: #fff;
+    padding: .8em 1em; 
+    text-decoration: none;
+    font-size: .65rem;
+}
+
+.grid a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.wrapper-three {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.wrapper-three h2 {
+    max-width: 940px;
+    text-align: center;
+    padding: 0 10em;
+}
+
+.wrapper-three p {
+    max-width: 940px;
+    text-align: center;
+    padding: 0 10em 1em;
+    font-size: .65rem;
+}
+
+#work {
+    padding: 1em 3em;
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "div1 div1 div1 div2 div2 div2"
+        "div1 div1 div1 div2 div2 div2"
+        "div3 div3 div4 div4 div5 div5"
+        "div3 div3 div4 div4 div5 div5"
+        ;
+    padding-bottom: 2em;
+}
+
+.grid-images .block:nth-child(1) {
+    grid-area: div1;
+}
+
+.grid-images .block:nth-child(2) {
+    grid-area: div2;
+}
+
+.grid-images .block:nth-child(3) {
+    grid-area: div3;
+}
+
+.grid-images .block:nth-child(4) {
+    grid-area: div4;
+}
+
+.grid-images .block:nth-child(5) {
+    grid-area: div5;
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: .65rem;
+    padding: 1em 0;
+}
